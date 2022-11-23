@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -37,10 +38,18 @@ h1 {
 /* header start  */
 
 header {
-  position: relative;
-  padding: 28px 0;
+  padding: 25px 0;
+  transition: 0.4s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #fff;
-  box-shadow: 0 4px 5px rgba(238, 240, 243, 0.6);
+  z-index: 1111;
+}
+
+header.boxShadow {
+  box-shadow: 0 2px 3px 2px rgba(110, 100, 255, 0.2);
 }
 
 .logo {
@@ -87,7 +96,7 @@ header {
 /* banner start  */
 
 .banner {
-  padding: 70px 0;
+  padding: 120px 0 70px;
 }
 
 .banner .grid {
@@ -187,6 +196,32 @@ footer p span {
   font-weight: 700;
 }
 
+/* scroll btn end */
+
+.scrollBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: #008aff;
+  transform: scale(0);
+  transform-origin: right bottom;
+  transition: 0.3s;
+}
+.scrollBtn i {
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.scrollBtn.show_btn {
+  transform: scale(1);
+}
 /* responsive design  */
 
 @media only screen and (max-width: 1399px) {
