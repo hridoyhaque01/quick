@@ -96,7 +96,7 @@ header.boxShadow {
 /* banner start  */
 
 .banner {
-  padding: 120px 0 70px;
+  padding: 170px 0 70px;
 }
 
 .banner .grid {
@@ -286,6 +286,9 @@ footer p span {
   }
   /* common content end  */
   /* banner content start  */
+  .banner {
+    padding: 120px 0 70px;
+  }
 
   .banner_content h1 {
     font-size: 40px;
@@ -305,8 +308,8 @@ footer p span {
 
   .navbar {
     position: fixed;
-    top: 95px;
-    right: 45px;
+    top: 68px;
+    right: 40px;
     transform: scale(0);
     transition: transform 0.3s ease-out;
     transform-origin: right top;
